@@ -17,8 +17,7 @@ async function seedLocations() {
   ];
 
   for (const name of locationNames) {
-    const location = new Location(name);
-    await locationRepo.addLocation(location);
+    await locationRepo.addLocation(name);
   }
 
   console.log("Locations seeded:", locationNames.length);

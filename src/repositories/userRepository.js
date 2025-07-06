@@ -1,4 +1,4 @@
-const db = require('../db/fakeDb');
+const db = require('../database/SimulatedDB');
 const User = require('../models/User');
 
 module.exports = {
